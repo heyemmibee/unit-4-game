@@ -22,7 +22,8 @@ var losses = 0
     var roseNumber = Math.floor((Math.random() * 12) + 1);
     $("#rose").text(roseNumber)
 
-    //step 3, assign the functions for the maths (randomization) and restart
+    //step 3, assign the functions for the maths (randomization) and 
+    //I cannot get the target restart to work, it worked at one point and then stopped... im so sad. 
     
     function newRandomNumber() {
         target = Math.floor((Math.random() * 120) + 19);
@@ -56,7 +57,7 @@ var losses = 0
             newCrystalNumber();
         }
 
-        else if (userTally > target) {
+        else if (userScore > target) {
             losses++;
             alert("You lost! Try again?");
             $("#losses").text(losses);

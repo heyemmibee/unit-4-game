@@ -3,6 +3,10 @@ body{
     font-family:'Indie Flower', cursive;
 }
 
+h1 {
+    color: hotpink;
+}
+
 h2 {
     font-size: 36px;
 }
