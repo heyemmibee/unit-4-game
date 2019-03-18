@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
 <!-- do we want to make this functional on all screens?    
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,21 +16,45 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Crystal Guessing Game</h1>
-          <p class="lead"> Guess what! <br> A random number has been generated and assigned to each of the crystals below.<br>
-                By clicking on the image of a crystal you will add that specific amount to your to the total score. <br>
-                Win the game by adding the values of the crystals to make your total score match the random number. <br>
-                If your total score goes above the random number you lose. Each time the game starts, the game will change the values of each crystal.</p>
+          <p class="lead"> A random number has been generated as your targeted sum total, and each of the crystals has been assigned a random value.<br>
+                By clicking on the image of a crystal you will add that specific amount to your score, your goal is to reach the target total. <br>
+                Win the game by adding the values of each crystal to make your total score match the randomly generated number. <br>
+                If your total score goes above the random number you lose. Each time the game starts, the values of the crystals change.</p>
         </div>
       </div>
-    <div id="score">
+    <div class="container">
+        <div class="row" id="databank">
+            <div class="col-md-4" id="sum-number">
+                <h2>Target Total: </h2>
+                <h3 id="random-number"></h3>
+            </div>
+            <div class="col-md-4" id="total-score">
+                <h2>Your Total Score: </h2>
+                <br>
+                <h3 id="showScore"></h3>
+            </div>
+            <div class="col-md-4" id="scoreboard">
+                <h2>Scoreboard: </h2>
+                <br>
+                <h3>
+                    Wins: 
+                    <span id="wins"></span>
+                </h3>
+                <h3>
+                    Losses: 
+                    <span id="losses"></span>
+                </h3>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <img class="crystals" id="ruby" src="./assets/images/Ruby-Diamond.gif">
+            <img class="crystals" id="amethyst" src="./assets/images/amethyst-crystal.gif">
+            <img class="crystals" id="sapphire" src="./assets/images/blue-gem.gif">
+            <img class="crystals" id="rose" src="./assets/images/pink-crystal.gif">
+        </div>
     </div>
-    <div id="crystals">
-    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-<script type="text/javascript" src="./assets/javascript/game.js">
-
-</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 
