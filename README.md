@@ -1,4 +1,4 @@
-# unit-4-game
+# 'Crystal Math'
 
 "Crystal Math" uses jQuery, bootsrap, html and css to create a fun math equation game that *rocks*. A random target number will appear as well as 4 crystals each assigned a random value. The user's objective is to add up the crystals values to reach the target number. If you go over the value, the game will reset to try again.
 
